@@ -1,0 +1,17 @@
+async-timeout==4.0.2
+Jinja2
+matplotlib
+numpy
+Pillow
+pytorch-lightning
+pytorch-triton
+PyYAML
+scipy
+tensorboard
+tensorboard-data-server
+tensorboard-plugin-wit
+torch
+torchmetrics
+torchvision
+tqdm
+                                                

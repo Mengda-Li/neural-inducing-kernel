@@ -1,0 +1,23 @@
+mv: inter-device move failed: ‘/gpfs/users/dunitz/.conda’ to ‘/gpfs/workdir/dunitz/.conda/.conda’; unable to remove target: Directory not empty
+/gpfs/users/dunitz/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/gpfs/users/dunitz/.local/lib/python3.8/site-packages/torch/nn/modules/loss.py:536: UserWarning: Using a target size (torch.Size([1, 1, 10])) that is different to the input size (torch.Size([40, 4, 10])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/gpfs/users/dunitz/.local/lib/python3.8/site-packages/torch/nn/modules/loss.py:536: UserWarning: Using a target size (torch.Size([3, 4])) that is different to the input size (torch.Size([40, 3, 4])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Traceback (most recent call last):
+  File "train_axes.py", line 334, in <module>
+    perimage_validate_image(backbone, spline, val_img, Path('initial'))
+  File "train_axes.py", line 34, in perimage_validate_image
+    maxes = np.sum(np.abs(A), axis=0)
+  File "<__array_function__ internals>", line 5, in sum
+  File "/gpfs/softs/spack/opt/spack/linux-centos7-cascadelake/gcc-9.2.0/anaconda3-2021.05-iqwuixltaz4o4tspbuo2fgpqpsdsj74q/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2247, in sum
+    return _wrapreduction(a, np.add, 'sum', axis, dtype, out, keepdims=keepdims,
+  File "/gpfs/softs/spack/opt/spack/linux-centos7-cascadelake/gcc-9.2.0/anaconda3-2021.05-iqwuixltaz4o4tspbuo2fgpqpsdsj74q/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 85, in _wrapreduction
+    return reduction(axis=axis, out=out, **passkwargs)
+TypeError: sum() received an invalid combination of arguments - got (out=NoneType, axis=int, ), but expected one of:
+ * (*, torch.dtype dtype)
+      didn't match because some of the keywords were incorrect: out, axis
+ * (tuple of ints dim, bool keepdim, *, torch.dtype dtype)
+ * (tuple of names dim, bool keepdim, *, torch.dtype dtype)
+

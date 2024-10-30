@@ -1,0 +1,7 @@
+mv: inter-device move failed: ‘/gpfs/users/dunitz/.conda’ to ‘/gpfs/workdir/dunitz/.conda/.conda’; unable to remove target: Directory not empty
+Traceback (most recent call last):
+  File "train2.py", line 18, in <module>
+    from splines import TPS2RGBSpline, TPS2RGBSplineXY, NaturalCubic, NaturalCubicArbitraryXY
+  File "/gpfs/workdir/dunitz/neuralsplineenhancement/splines.py", line 1, in <module>
+    from abc import ABC, abstractmeth3d
+ImportError: cannot import name 'abstractmeth3d' from 'abc' (/gpfs/softs/spack/opt/spack/linux-centos7-cascadelake/gcc-9.2.0/anaconda3-2021.05-iqwuixltaz4o4tspbuo2fgpqpsdsj74q/lib/python3.8/abc.py)
