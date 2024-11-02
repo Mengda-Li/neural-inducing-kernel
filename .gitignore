@@ -1,0 +1,11 @@
+data/expertC
+data/Original
+.DS_Store
+hello.py
+000002.jpg
+Untitled.ipynb
+.ipynb_checkpoints/Untitled-checkpoint.ipynb
+data/categories.txt
+data/categories_questions.txt
+.ipynb_checkpoints/pyproject-checkpoint.toml
+uv.lock
