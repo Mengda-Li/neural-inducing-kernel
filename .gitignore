@@ -9,3 +9,8 @@ data/categories.txt
 data/categories_questions.txt
 .ipynb_checkpoints/pyproject-checkpoint.toml
 uv.lock
+.vscode
+.venv
+.ipynb_checkpoints
+*.pyc
+lightning_logs

@@ -44,6 +44,7 @@ class FiveKDataset(Dataset):
             transformed_original_image = self.transform(original_image)
             # target_image = self.transform(target_image)
 
+        original_image, target_image = original_image.half(), target_image.half()
         return original_image, target_image, transformed_original_image
 
 
